@@ -127,6 +127,20 @@
     .pkg-feats .ck{flex-shrink:0;width:18px;height:18px;background:var(--green-l);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:1px}
     .pkg-feats .ck svg{width:10px;height:10px;color:var(--green)}
     .pkg-feats .inh{color:var(--g400);font-style:italic}
+    /* Launch feature sub-list */
+    .feat-with-sub{align-items:flex-start!important}
+    .feat-with-sub>span{display:block}
+    .feat-sub-list{margin-top:7px;padding-left:2px}
+    .feat-sub-list li{display:flex;align-items:flex-start;gap:7px;padding:3px 0;font-size:.8rem;color:var(--g500);border:none!important}
+    .feat-sub-list li::before{content:'';flex-shrink:0;width:5px;height:5px;background:var(--g300);border-radius:50%;margin-top:5px}
+    /* Launch Offer callout */
+    .launch-offer{margin-top:32px;background:linear-gradient(135deg,#fff9ec 0%,#fffbf0 100%);border:1.5px solid #f59e0b;border-radius:var(--r);padding:24px 28px;display:flex;align-items:flex-start;gap:16px}
+    .launch-offer-icon{flex-shrink:0;width:40px;height:40px;background:#fef3c7;border-radius:10px;display:flex;align-items:center;justify-content:center}
+    .launch-offer-icon svg{width:20px;height:20px;color:#d97706}
+    .launch-offer-badge{font-size:.625rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:#d97706;margin-bottom:5px}
+    .launch-offer h4{font-size:.9375rem;color:#92400e;margin-bottom:6px}
+    .launch-offer p{font-size:.875rem;color:#78350f;line-height:1.7;margin:0}
+    .launch-offer strong{color:#92400e}
     /* pkg-cta works for both <a> and <button> */
     .pkg-cta{display:block;width:100%;text-align:center;margin-top:22px;padding:11px;background:var(--g50);border:1px solid var(--g200);border-radius:var(--r-sm);font-family:var(--font);font-size:.875rem;font-weight:700;color:var(--accent);text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
     .pkg-cta:hover,.pkg-cta:focus-visible{background:var(--accent);color:#fff;border-color:var(--accent);outline:none}
@@ -544,7 +558,7 @@
           <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Mobile optimization</li>
           <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Contact form setup</li>
           <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Basic SEO setup</li>
-          <li><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Website launch support</li>
+          <li class="feat-with-sub"><span class="ck" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span>Website Launch &amp; Go-Live Setup<ul class="feat-sub-list" role="list"><li>Connecting the website to the live domain</li><li>Final mobile and browser testing</li><li>Contact form testing</li><li>Basic SEO indexing setup</li><li>Publishing the website live</li><li>Minor launch-day adjustments if needed</li></ul></span></li>
         </ul>
         <button class="pkg-cta" onclick="openPkgModal('Starter','$2,200')">Select Starter</button>
       </div>
@@ -618,8 +632,8 @@
       <div>
         <div class="growth-card">
           <div class="growth-card-label">Monthly Investment</div>
-          <div class="growth-price">$500 – $1,500</div>
-          <div class="growth-note">per month &nbsp;·&nbsp; ad spend is separate</div>
+          <div class="growth-price">$350 – $850</div>
+          <div class="growth-note">per month &nbsp;·&nbsp; Advertising spend is managed separately through the client's ad account.</div>
           <div class="growth-div"></div>
           <ul class="growth-perks" role="list">
             <li>Fully managed campaigns</li>
@@ -630,6 +644,17 @@
             <li>No long-term commitment</li>
           </ul>
         </div>
+      </div>
+    </div>
+    <!-- Launch Offer callout -->
+    <div class="launch-offer">
+      <div class="launch-offer-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div>
+        <div class="launch-offer-badge">Limited-Time Offer</div>
+        <h4>Launch Offer — 10% Off Your First 3 Months</h4>
+        <p>Clients who enroll in the Monthly Growth Program within <strong>14 days of the website launch</strong> receive <strong>10% off their first 3 months of service.</strong> Lock in your rate now and hit the ground running the moment your site goes live.</p>
       </div>
     </div>
   </div>
